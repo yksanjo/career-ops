@@ -1,0 +1,99 @@
+# Career-Ops Profile Configuration
+# Santiago Fernández de Valderrama
+
+candidate:
+  full_name: "Santiago Fernández de Valderrama"
+  email: "hello@santifer.io"
+  phone: "+34-XXX-XXX-XXX"
+  location: "Seville, Spain"
+  linkedin: "linkedin.com/in/santifer"
+  portfolio_url: "https://santifer.io"
+  github: "github.com/santifer"
+  twitter: "https://x.com/santifer"
+
+target_roles:
+  # Your North Star roles — what you're optimizing for
+  primary:
+    - "AI Product Manager"
+    - "AI Solutions Architect"
+    - "Forward Deployed Engineer"
+  # Archetypes help the evaluation system score fit
+  archetypes:
+    - name: "AI Solutions Architect"
+      level: "Senior/Staff"
+      fit: "primary"
+    - name: "AI Forward Deployed Engineer"
+      level: "Senior"
+      fit: "primary"
+    - name: "Technical AI Product Manager"
+      level: "Senior"
+      fit: "primary"
+    - name: "Agentic Workflows / Automation"
+      level: "Senior/Staff"
+      fit: "primary"
+    - name: "AI Platform / LLMOps Engineer"
+      level: "Senior"
+      fit: "secondary"
+
+narrative:
+  # Your professional headline (1 line)
+  headline: "Ex-founder (exit 2025) building production AI systems that solve real business problems"
+  # Your exit story — what makes you unique
+  exit_story: "Built and scaled B2B/B2C device repair business to 30,000+ repairs over 16 years. Transformed operations through AI/automation, built custom Business OS on Airtable, deployed omnichannel AI agent handling 90% of customer service. Successfully exited in 2025. Now focused on helping enterprises achieve similar transformations through applied AI."
+  # Your top 3-5 superpowers
+  superpowers:
+    - "Translating ambiguous business goals into production-ready AI solutions"
+    - "End-to-end ownership from discovery to adoption (16 years building real products)"
+    - "Multi-agent orchestration and agentic workflows at scale"
+    - "Stakeholder workshops and cross-functional alignment"
+    - "Building AI systems with measurable business impact (not demos)"
+  # Proof points — projects, articles, case studies with measurable impact
+  proof_points:
+    - name: "Jacobo - AI Omnichannel Agent"
+      url: "https://github.com/santifer/jacobo-workflows"
+      hero_metric: "~90% self-service rate, ~80 hrs/month automated, <€200/mo cost"
+    - name: "Career-Ops - AI Job Search Pipeline"
+      url: "https://github.com/santifer/career-ops"
+      hero_metric: "7,700+ GitHub stars, 1,300+ forks"
+    - name: "Business OS (Airtable ERP)"
+      url: "https://santifer.io"
+      hero_metric: "170+ hrs/month automated, 12 connected databases, 2,100+ fields"
+    - name: "Programmatic SEO Website"
+      url: "https://santifer.io"
+      hero_metric: "15,500+ unique pages generated, 2M+ impressions"
+    - name: "Self-Healing Chatbot"
+      url: "https://santifer.io"
+      hero_metric: "<$0.005/conversation, 71 evals, 6-layer defense"
+  # Open source and teaching
+  dashboard:
+    url: "https://github.com/santifer"
+    password: "public"
+
+compensation:
+  target_range: "€80K-120K / $100K-150K"
+  currency: "EUR/USD"
+  minimum: "€70K / $90K"
+  location_flexibility: "Fully remote (EU/USA timezone), occasional travel OK for right opportunity"
+
+location:
+  country: "Spain"
+  city: "Seville"
+  timezone: "CET (UTC+1)"
+  visa_status: "EU citizen - no sponsorship needed"
+  onsite_availability: "Fully remote preferred, open to quarterly meetups or occasional travel"
+
+# Additional context for better filtering
+work_preferences:
+  company_stage: "Series A+, scale-ups, or established companies building AI capabilities"
+  team_size: "Prefers large teams with complex challenges"
+  deal_breakers:
+    - "Pure consulting without building"
+    - "On-site only roles"
+    - "Roles not working with AI/LLMs/agentic systems"
+    - "Companies without clear AI strategy"
+  ideal_environment:
+    - "AI-first companies or organizations transforming through AI"
+    - "Complex, ambiguous problems requiring systems thinking"
+    - "End-to-end ownership from discovery to production"
+    - "Measurable business impact focus"
+    - "Collaborative, cross-functional work"
