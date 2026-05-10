@@ -1,0 +1,262 @@
+# Portal Scanner Configuration
+# Job discovery and filtering for Santiago's job search
+
+search_queries:
+  # Ashby job board
+  - name: "ashby-ai"
+    query: "site:jobs.ashbyhq.com \"AI\" OR \"Machine Learning\" OR \"LLM\""
+    enabled: true
+  - name: "ashby-product"
+    query: "site:jobs.ashbyhq.com \"Product Manager\" AI"
+    enabled: true
+  - name: "ashby-solutions"
+    query: "site:jobs.ashbyhq.com \"Solutions Architect\" OR \"Forward Deployed\""
+    enabled: true
+  
+  # Greenhouse job board
+  - name: "greenhouse-ai"
+    query: "site:job-boards.greenhouse.io OR site:job-boards.eu.greenhouse.io \"AI\" OR \"Machine Learning\" OR \"LLM\" OR \"Agentic\""
+    enabled: true
+  - name: "greenhouse-product"
+    query: "site:job-boards.greenhouse.io OR site:job-boards.eu.greenhouse.io \"Product Manager\" AI"
+    enabled: true
+  - name: "greenhouse-solutions"
+    query: "site:job-boards.greenhouse.io OR site:job-boards.eu.greenhouse.io \"Solutions Architect\" OR \"Solutions Engineer\" AI"
+    enabled: true
+  - name: "greenhouse-forward-deployed"
+    query: "site:job-boards.greenhouse.io OR site:job-boards.eu.greenhouse.io \"Forward Deployed\" OR \"Forward-Deployed\" OR \"Customer Engineer\""
+    enabled: true
+  
+  # Lever job board
+  - name: "lever-ai"
+    query: "site:jobs.lever.co \"AI\" OR \"Machine Learning\" OR \"LLM\""
+    enabled: true
+  - name: "lever-product"
+    query: "site:jobs.lever.co \"Product Manager\" AI"
+    enabled: true
+
+  # Direct company searches
+  - name: "anthropic-careers"
+    query: "site:anthropic.com/jobs \"Applied AI\" OR \"Solutions\" OR \"Forward Deployed\""
+    enabled: true
+  - name: "openai-careers"
+    query: "site:openai.com/careers \"Product\" OR \"Solutions\" OR \"Forward Deployed\""
+    enabled: true
+  - name: "n8n-careers"
+    query: "site:n8n.io/careers OR site:jobs.ashbyhq.com/n8n"
+    enabled: true
+  - name: "airtable-careers"
+    query: "site:airtable.com/careers \"Solutions\" OR \"AI\""
+    enabled: true
+
+tracked_companies:
+  # === AI Labs & Infrastructure ===
+  - name: "Anthropic"
+    careers_url: "https://www.anthropic.com/jobs"
+    enabled: true
+  - name: "OpenAI"
+    careers_url: "https://openai.com/careers"
+    enabled: true
+  - name: "LangChain"
+    careers_url: "https://jobs.ashbyhq.com/langchain"
+    enabled: true
+  - name: "Hugging Face"
+    careers_url: "https://job-boards.greenhouse.io/huggingface"
+    enabled: true
+  - name: "Cohere"
+    careers_url: "https://jobs.ashbyhq.com/cohere"
+    enabled: true
+  
+  # === Automation & Workflow Platforms ===
+  - name: "n8n"
+    careers_url: "https://n8n.io/careers"
+    enabled: true
+  - name: "Make (Integromat)"
+    careers_url: "https://www.make.com/en/careers"
+    enabled: true
+  - name: "Zapier"
+    careers_url: "https://zapier.com/jobs"
+    enabled: true
+  - name: "Workato"
+    careers_url: "https://www.workato.com/careers"
+    enabled: true
+  - name: "Tray.io"
+    careers_url: "https://tray.io/careers"
+    enabled: true
+  - name: "Pipedream"
+    careers_url: "https://pipedream.com/careers"
+    enabled: true
+  
+  # === Enterprise SaaS & AI Platforms ===
+  - name: "Airtable"
+    careers_url: "https://airtable.com/careers"
+    enabled: true
+  - name: "Notion"
+    careers_url: "https://www.notion.so/careers"
+    enabled: true
+  - name: "Slack"
+    careers_url: "https://slack.com/careers"
+    enabled: true
+  - name: "Miro"
+    careers_url: "https://miro.com/careers/"
+    enabled: true
+  - name: "Figma"
+    careers_url: "https://www.figma.com/careers"
+    enabled: true
+  
+  # === AI-First Startups (European) ===
+  - name: "Mistral AI"
+    careers_url: "https://mistral.ai/careers/"
+    enabled: true
+  - name: "Aleph Alpha"
+    careers_url: "https://aleph-alpha.com/careers"
+    enabled: true
+  - name: "DeepL"
+    careers_url: "https://www.deepl.com/jobs"
+    enabled: true
+  - name: "Celonis"
+    careers_url: "https://www.celonis.com/careers/"
+    enabled: true
+  - name: "Contentful"
+    careers_url: "https://www.contentful.com/careers/"
+    enabled: true
+  
+  # === Voice AI & Communication ===
+  - name: "ElevenLabs"
+    careers_url: "https://elevenlabs.io/careers"
+    enabled: true
+  - name: "Play.ai"
+    careers_url: "https://play.ai/careers"
+    enabled: true
+  - name: "Vapi"
+    careers_url: "https://vapi.ai/careers"
+    enabled: true
+  - name: "Retell AI"
+    careers_url: "https://www.retellai.com/careers"
+    enabled: true
+  - name: "Bland AI"
+    careers_url: "https://www.bland.ai/careers"
+    enabled: true
+  
+  # === LLMOps & Observability ===
+  - name: "LangSmith (LangChain)"
+    careers_url: "https://jobs.ashbyhq.com/langchain"
+    enabled: true
+  - name: "Weights & Biases"
+    careers_url: "https://wandb.ai/careers"
+    enabled: true
+  - name: "Arize AI"
+    careers_url: "https://arize.com/careers/"
+    enabled: true
+  - name: "Patronus AI"
+    careers_url: "https://www.patronus.ai/careers"
+    enabled: true
+  
+  # === Forward Deployed / Solutions ===
+  - name: "Stord"
+    careers_url: "https://jobs.ashbyhq.com/stord"
+    enabled: true
+  - name: "Palantir"
+    careers_url: "https://www.palantir.com/careers/"
+    enabled: true
+  - name: "Scale AI"
+    careers_url: "https://scale.com/careers"
+    enabled: true
+  - name: "Databricks"
+    careers_url: "https://www.databricks.com/company/careers"
+    enabled: true
+  - name: "Snowflake"
+    careers_url: "https://careers.snowflake.com/"
+    enabled: true
+  
+  # === Enterprise AI ===
+  - name: "DataRobot"
+    careers_url: "https://www.datarobot.com/careers/"
+    enabled: true
+  - name: "Dataiku"
+    careers_url: "https://www.dataiku.com/company/careers/"
+    enabled: true
+  - name: "Domino Data Lab"
+    careers_url: "https://www.dominodatalab.com/careers"
+    enabled: true
+  - name: "C3.ai"
+    careers_url: "https://c3.ai/careers/"
+    enabled: true
+  
+  # === European AI Startups ===
+  - name: "Synthesia"
+    careers_url: "https://jobs.ashbyhq.com/synthesia"
+    enabled: true
+  - name: "Brewdog AI"
+    careers_url: "https://job-boards.greenhouse.io/brewdog"
+    enabled: true
+  - name: "Cresta"
+    careers_url: "https://cresta.com/careers/"
+    enabled: true
+  - name: "Gong.io"
+    careers_url: "https://www.gong.io/careers/"
+    enabled: true
+  - name: "Chorus.ai"
+    careers_url: "https://www.chorus.ai/careers"
+    enabled: true
+  
+  # === Remote-First Companies ===
+  - name: "GitLab"
+    careers_url: "https://about.gitlab.com/jobs/"
+    enabled: true
+  - name: "Supabase"
+    careers_url: "https://supabase.com/company"
+    enabled: true
+  - name: "Vercel"
+    careers_url: "https://vercel.com/careers"
+    enabled: true
+  - name: "Automattic"
+    careers_url: "https://automattic.com/work-with-us/"
+    enabled: true
+  - name: "Doist"
+    careers_url: "https://doist.com/careers"
+    enabled: true
+
+title_filter:
+  # Keywords that MUST appear in job titles (at least one)
+  positive:
+    - "AI"
+    - "Machine Learning"
+    - "LLM"
+    - "Agentic"
+    - "Product Manager"
+    - "Solutions"
+    - "Forward Deployed"
+    - "Forward-Deployed"
+    - "Automation"
+    - "Platform"
+    - "Developer Relations"
+    - "AI Enablement"
+    - "Technical"
+  
+  # Keywords that EXCLUDE jobs (any match = skip)
+  negative:
+    - "Intern"
+    - "Internship"
+    - "Junior"
+    - "Entry Level"
+    - "Graduate"
+    - "Apprentice"
+    - "Sales Development"
+    - "SDR"
+    - "BDR"
+    - "Recruiter"
+    - "HR"
+  
+  # Keywords that boost priority (senior roles)
+  seniority_boost:
+    - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Head"
+    - "Director"
+    - "Manager"
+    - "Architect"
+    - "Forward Deployed"
+    - "Solutions"
